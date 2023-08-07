@@ -1,15 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ExploderBomb : MonoBehaviour {
-
-    public Transform bomb;
+public class BombOnHold : MonoBehaviour
+{
+    /*public Transform bomb;
     public float bombRadius;
     public float bombPower;
     public AudioSource bombSound;
-
+    
     public ParticleSystem partiFlame;
     public Image bombFadeImage;
 
@@ -92,5 +91,5 @@ public class ExploderBomb : MonoBehaviour {
     {
         bombFadeImage.enabled = false;
         bombFadeImage.CrossFadeAlpha(1.0f, 0.01f, true);
-    }
+    }*/
 }
