@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ExploderBomb : MonoBehaviour {
+public class ExploderBomb : MonoBehaviour
+{
 
     public Transform bomb;
     public float bombRadius;
     public float bombPower;
     public AudioSource bombSound;
+    public AudioSource buildUpSound;
 
     public ParticleSystem partiFlame;
     public Image bombFadeImage;
@@ -37,12 +39,14 @@ public class ExploderBomb : MonoBehaviour {
         {
             isHolding = true;
             currentTime = 0f;
+            buildUpSound.Play();
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             isHolding = false;
             currentTime = 0f;
+            buildUpSound.Stop();
         }
 
         if (isHolding)

@@ -8,10 +8,8 @@ public class BombOnHold : MonoBehaviour
     public float bombRadius;
     public float bombPower;
     public AudioSource bombSound;
-    
     public ParticleSystem partiFlame;
     public Image bombFadeImage;
-
     private Transform player;
     private Vector3 explosionPos;
     private float holdDuration = 5f;
