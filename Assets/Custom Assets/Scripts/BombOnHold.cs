@@ -30,13 +30,13 @@ public class BombOnHold : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             isHolding = true;
             currentTime = 0f;
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(1))
         {
             isHolding = false;
             currentTime = 0f;

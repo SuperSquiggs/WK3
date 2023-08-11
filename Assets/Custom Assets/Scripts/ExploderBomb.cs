@@ -35,14 +35,14 @@ public class ExploderBomb : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             isHolding = true;
             currentTime = 0f;
             buildUpSound.Play();
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(1))
         {
             isHolding = false;
             currentTime = 0f;
