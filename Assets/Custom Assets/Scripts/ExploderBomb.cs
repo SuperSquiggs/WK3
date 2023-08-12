@@ -12,7 +12,7 @@ public class ExploderBomb : MonoBehaviour
     public AudioSource bombSound;
     public AudioSource buildUpSound;
 
-    public ParticleSystem partiFlame;
+    public GameObject particles;
     public Image bombFadeImage;
 
     private Transform player;
@@ -81,7 +81,9 @@ public class ExploderBomb : MonoBehaviour
 
         bombSound.Play();
         bombFadeImage.enabled = true;
-        partiFlame.Play();
+
+        Instantiate(particles, transform.position, transform.rotation);
+
         CameraShake.Shake(0.75f, 0.25f);
         Invoke("BeginFade", 0.1f);
     }
